@@ -37,7 +37,7 @@ function setCursorPosition(pos, e) {
         var commonLabel = document.querySelector("label.common-label");
         commonLabel.innerHTML = namesFiles;
     };
-
+    //
     function hideSuccessBg() {
         var bgSuccess = document.querySelector(".bg-success");
         bgSuccess.style.display = "none";
