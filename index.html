@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+  <script src="https://kit.fontawesome.com/029395a76e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+<div class="bg-success">
+  <div class="success-form">
+    <div class="success-flag">
+      <i class="fa-regular fa-circle-check"></i>
+    </div>
+    <div class="success-text">
+      <h3>Успешно!</h3>
+      <p>Ваша заявка успешно принята!</p>
+    </div>
+      <button class="button-ok">Ок</button>
+</div> 
+</div>  
+<div class="field-form">
+<div class="wrap-form">
+    <form>
+      <div class="inner-form">
+        <h2>Форма обратной связи</h2>
+        <div class="input-container">
+  <label for="firstname">Имя:</label>
+  <input id="firstname" name="firstname" type="text" required="required">
+  <label for="lastname">Фамилия:</label>
+  <input id="lastname" name="lastname" type="text" required="required">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required="required">
+  <label for="bday">Дата рождения:</label>
+  <input name="bday" type="text" required="required" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+  <label for="online-phone">Номер телефона:</label>
+  <input id="online-phone" name="phone" type="tel" maxlength="50"
+         autofocus="autofocus" required="required"
+         value="+7(___)___-__-__"
+         pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+         placeholder="+7(___)___-__-__">
+  <label for="city">Город:</label>
+  <input id="city" name="city" type="text" required="required" value="Белгород">
+  <label for="portfolio">Портфолио</label>
+  <input type="file" id="portfolio" name="portfolio" required="required" multiple>
+  <label class="common-label" for="portfolio">Выберите файл</label>
+  <button class="button button--full" type="submit">Отправить заявку</button>
+        </div>
+      </div>
+</form>
+  </div>
+  </div>
+  
+</body>
+</html>
