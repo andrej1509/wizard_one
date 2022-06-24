@@ -33,7 +33,6 @@ function setCursorPosition(pos, e) {
         [...e.target.files].forEach((element) => {
             namesFiles = namesFiles + element.name;
         })
-        console.log(namesFiles);
         var commonLabel = document.querySelector("label.common-label");
         commonLabel.innerHTML = namesFiles;
     };
@@ -51,4 +50,5 @@ function setCursorPosition(pos, e) {
         portfolio.addEventListener("change", hideLabel, false);
         okButton.addEventListener("click", hideSuccessBg, false);
     })
+
 

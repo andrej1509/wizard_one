@@ -48,7 +48,7 @@
 
 						case "REQ" :
 						case "REQUIRED" : {
-							if (! isset(trim($this->Vars[$key]))) return false;
+							if (trim($this->Vars[$key]) == null) return false;
 							break;
 						}
 
